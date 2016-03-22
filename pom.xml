@@ -258,9 +258,11 @@
     <artifactId>pitest-maven</artifactId>
     <version>1.1.4</version>
     <configuration>
-        <targetClasses>
-            <param>retrofit.*</param>
-        </targetClasses>
+
+        <skip>true</skip>
+            <targetClasses>
+                <param>retrofit.*</param>
+            </targetClasses>
 	<failWhenNoMutations>false</failWhenNoMutations>
             <outputFormats>
                 <outputFormat>XML</outputFormat>
